@@ -1,0 +1,23 @@
+{
+  "name": "designing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"tailwindcss -i src/styles.css -o public/output.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilalscripts/designing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilalscripts/designing/issues"
+  },
+  "homepage": "https://github.com/bilalscripts/designing#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
