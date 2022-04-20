@@ -1,82 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>master branch</title>
-    <link rel="stylesheet" href="output.css">
-</head>
-<body  >
-    <div >  <!--Content wraper-->
-        
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div>
+      <!--Content wraper-->
+
+      <div>
+        <nav>
+          <div>
+            <h1 class="font-bold uppercase p-4 border-b border-gray-200">
+              <a href="/">Food lelo</a>
+            </h1>
+          </div>
+          <ul>
+            <li class="text-gray-700 font-bold">
+              <a href="#">
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--End Nav-->
+
+      <main class="px-16 py-6 bg-gray-100">
         <div>
-            <nav>
-                <div>
-                    <h1 class="font-bold uppercase p-4 border-b border-gray-200">
-                        <a href="/">Food lelo</a>
-                    </h1>
-                </div>
-                <ul>
-                    <li class="text-gray-700 font-bold">
-                        <a href="#">
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span>Contact</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div> <!--End Nav-->
+          <a href="#">Login</a>
+          <a href="#">Sign Up</a>
+        </div>
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">Recepies</h2>
+          <h3 class="text-2xl font-semibold">For Programmers</h3>
+        </header>
 
-        <main class="px-16 py-6">
-            <div>
-                <a href="#">Login</a>
-                <a href="#">Sign Up</a>
+        <div>
+          <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">
+            Latest Recepies
+          </h4>
+          <div class="mt-8">
+            <!--Cards go here-->
+            <div class="bg-white rounded overflow-hidden shadow-md">
+              <img
+                src="./img/img1.jpg"
+                alt="img1"
+                srcset=""
+                class="w-full h-32 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold block">Title</span>
+                <span class="block text-gray-500 text-sm">Author name</span>
+              </div>
             </div>
-            <header>
-                <h2 class="text-gray-700 text-6xl font-semibold">Recepies</h2>
-                <h3 class="text-2xl font-semibold">For Programmers</h3>
-            </header>
+          </div>
 
-            <div>
-                <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">Latest Recepies</h4>
-                <div class="mt-8">
+          <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">
+            Popular Recepies
+          </h4>
+          <div class="mt-8">
+            <!--Cards go here-->
+          </div>
 
-                    <!--Cards go here-->
-                    <div>
-                        <img src="./img/img1.jpg" alt="img1" srcset="">
-                        <div>
-                            <span>title</span>
-                            <span>Author name</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">Popular Recepies</h4>
-                <div class="mt-8">
-                    <!--Cards go here-->
-                </div>
-
-                <div>
-                    <div>Load More</div>
-                </div>
-            </div>
-        </main>
+          <div>
+            <div>Load More</div>
+          </div>
+        </div>
+      </main>
     </div>
-    
-</body>
+  </body>
 </html>
-
 
 <!-- 
     classes Im using
@@ -99,6 +106,9 @@
 -border-color-strngthofcolor
 -border-gray-200
 
+-rounded (it will give radius)
+-w-full (full width to its parent)
+-object-cover (stops from stretching image it will zoom it)
 
 
 
