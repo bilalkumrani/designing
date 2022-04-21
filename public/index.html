@@ -60,8 +60,8 @@
 
       <main class="px-16 py-6 bg-gray-100 md:col-span-2 ">
         <div class="flex justify-end gap-4" >
-          <a class="btn border-black border-2 bg-white hover:bg-black hover:text-white " href="#">Login</a>
-          <a class="btn border-black border-2 bg-white hover:bg-black hover:text-white "  href="#">Sign Up</a>
+          <a class="btn border-black  bg-red-200 hover:bg-black hover:text-white transition ease-out duration-500 " href="#">Login</a>
+          <a class="btn border-black  bg-red-200 hover:bg-black hover:text-white transition ease-out duration-500"  href="#">Sign Up</a>
         </div>
         <header>
           <h2 class="text-gray-700 text-6xl font-semibold">Recepies</h2>
@@ -144,22 +144,21 @@
 
             
           </div>
+        </div>
+        <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">
+          Popular Recepies
+        </h4>
+        <div class="mt-8">
+          <!--Cards go here-->
+        </div>
 
+        <div class="inline-block grid place-items-center">
+          <div class="btn border-black border-2  hover:shadow-inner transform hover:scale-125
+          transition hover:ease-out">Load More</div>
         </div>
       </div>
 
-        
-
-          <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">
-            Popular Recepies
-          </h4>
-          <div class="mt-8">
-            <!--Cards go here-->
-          </div>
-
-          <div class="grid grid-cols-12">
-            <div class="btn border-black border-2  hover:shadow-inner">Load More</div>
-          </div>
+         
         </div>
       </main>
     </div>
@@ -204,5 +203,10 @@
 
 -items-center (to center items vertically)
 
+-grid place-items-center (place items center inside grid)
 
+
+-transition ease-out duration-500
+
+-transform hover:scale-125
 -->
