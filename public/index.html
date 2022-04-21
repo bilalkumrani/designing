@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <div>
+    <div class="grid md:grid-cols-3">
       <!--Content wraper-->
 
-      <div>
+      <div class="md:col-span-1">
         <nav>
           <div>
             <h1 class="font-bold uppercase p-4 border-b border-gray-200">
               <a href="/">Food lelo</a>
             </h1>
           </div>
+           <div >
           <ul>
             <li class="text-gray-700 font-bold">
               <a href="#">
@@ -35,11 +36,13 @@
               </a>
             </li>
           </ul>
+        </div>
+
         </nav>
       </div>
       <!--End Nav-->
 
-      <main class="px-16 py-6 bg-gray-100">
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div>
           <a href="#">Login</a>
           <a href="#">Sign Up</a>
@@ -53,11 +56,32 @@
           <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">
             Latest Recepies
           </h4>
-          <div class="mt-8">
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!--Cards go here-->
+            
+            <!-- card 1 -->
             <div class="bg-white rounded overflow-hidden shadow-md relative">
               <img
                 src="./img/img1.jpg"
+                alt="img3"
+                srcset=""
+                class="w-full h-32 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold block">Title</span>
+                <span class="block text-gray-500 text-sm">Author name</span>
+              </div>
+              <div
+                class="bg-red-200 text-gray-600 text-xs font-bold uppercase rounded-full p-2 absolute top-0 ml-2 mt-2"
+              >
+                <span> 20 min </span>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="bg-white rounded overflow-hidden shadow-md relative">
+              <img
+                src="./img/img2.jpg"
                 alt="img1"
                 srcset=""
                 class="w-full h-32 object-cover"
@@ -72,7 +96,34 @@
                 <span> 20 min </span>
               </div>
             </div>
+
+            <!-- card 3 -->
+            <div class="bg-white rounded overflow-hidden shadow-md relative">
+              <img
+                src="./img/img3.jpg"
+                alt="img1"
+                srcset=""
+                class="w-full h-32 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold block">Title</span>
+                <span class="block text-gray-500 text-sm">Author name</span>
+              </div>
+              <div
+                class="bg-red-200 text-gray-600 text-xs font-bold uppercase rounded-full p-2 absolute top-0 ml-2 mt-2"
+              >
+                <span> 20 min </span>
+              </div>
+            </div>
+
+
+            
           </div>
+
+        </div>
+      </div>
+
+        
 
           <h4 class="font-bold mt-12 pb-2 border-b-4 border-gray-200">
             Popular Recepies
@@ -117,6 +168,7 @@
 -relative (when we want to adjust child tag relative to parent so give relative to parent)
 -absolute (give this class to child and give it position it will take position according to its parent)
 
-
-
+-grid (it will make grid container)
+-grid-cols-3 (it will make 3 grid column inside grid container total cols can be 12)
+-col-span-2 (item will cover 2 columns in grid)
 -->
