@@ -11,35 +11,42 @@
     <div class="grid md:grid-cols-3">
       <!--Content wraper-->
 
-      <div class="md:col-span-1">
-        <nav>
-          <div>
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-200">
               <a href="/">Food lelo</a>
             </h1>
+            <div class="md:hidden cursor-pointer px-4" id="burger">
+              <svg class="w-6" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </div>
+
           </div>
+          
            <div >
-          <ul>
+          <ul class="hidden md:block" id="menu">
             <li class="text-gray-700 font-bold">
-              <a href="#">
-                <span>Home</span>
-                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <a class="px-4 flex justify-end border-r-4 border-red-600 hover:text-red-600" href="#">
+                <span class="">Home</span>
+                <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="px-4 flex justify-end hover:text-red-600" href="#">
                 <span>About</span>
-                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a class="px-4 flex justify-end hover:text-red-600" href="#">
                 <span>Contact</span>
-                <svg class="w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                 </svg>
               </a>
@@ -51,10 +58,10 @@
       </div>
       <!--End Nav-->
 
-      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
-        <div>
-          <a class="btn border-black border-2 bg-white hover:bg-black hover:text-white" href="#">Login</a>
-          <a class="btn border-black border-2 bg-white hover:bg-black hover:text-white"  href="#">Sign Up</a>
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2 ">
+        <div class="flex justify-end gap-4" >
+          <a class="btn border-black border-2 bg-white hover:bg-black hover:text-white " href="#">Login</a>
+          <a class="btn border-black border-2 bg-white hover:bg-black hover:text-white "  href="#">Sign Up</a>
         </div>
         <header>
           <h2 class="text-gray-700 text-6xl font-semibold">Recepies</h2>
@@ -69,7 +76,7 @@
             <!--Cards go here-->
             
             <!-- card 1 -->
-            <div class="bg-white rounded overflow-hidden shadow-md relative">
+            <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
               <img
                 src="./img/img1.jpg"
                 alt="img3"
@@ -91,7 +98,7 @@
             </div>
 
             <!-- card 2 -->
-            <div class="bg-white rounded overflow-hidden shadow-md relative">
+            <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
               <img
                 src="./img/img2.jpg"
                 alt="img1"
@@ -113,7 +120,7 @@
             </div>
 
             <!-- card 3 -->
-            <div class="bg-white rounded overflow-hidden shadow-md relative">
+            <div class="bg-white rounded overflow-hidden shadow-md relative hover:shadow-lg">
               <img
                 src="./img/img3.jpg"
                 alt="img1"
@@ -150,12 +157,14 @@
             <!--Cards go here-->
           </div>
 
-          <div>
-            <div class="btn">Load More</div>
+          <div class="grid grid-cols-12">
+            <div class="btn border-black border-2  hover:shadow-inner">Load More</div>
           </div>
         </div>
       </main>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
 
@@ -192,4 +201,8 @@
 
 -cursor-pointer
 -tracking-wider (increase space between letters)
+
+-items-center (to center items vertically)
+
+
 -->
